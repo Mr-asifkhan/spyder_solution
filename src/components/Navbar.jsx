@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import AuthModals from "./auth/AuthModals";
+import logo from "../assets/spyder2.png";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               to="/"
               className="text-2xl font-bold text-green-500 hover:text-green-600 transition-colors duration-300 cursor-pointer"
             >
-              Asif
+              <img src={logo} alt="spydersolution" className="h-10 w-10" />
             </Link>
           </motion.div>
 
